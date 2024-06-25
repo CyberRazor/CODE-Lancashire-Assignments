@@ -1,0 +1,87 @@
+body{
+    background-image: linear-gradient(teal, darkgray);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+#linkBoxDiv{
+    background-image: linear-gradient(darkgray,black);
+}
+#FerrariBox{
+    position:absolute;
+    top:150px; 
+    left:10px; 
+    bottom:100px; 
+    right:50px;
+    width: 475px;
+    height:500px;
+    background-image: linear-gradient(red,black);
+}
+
+#SEGABox{
+    position:absolute;
+    top:150px; 
+    left:535px; 
+    bottom:100px; 
+    right:10px;
+    width: 475px;
+    height:500px;
+    background-image: linear-gradient(blue,black);
+}
+
+#NatureBox{
+    position:absolute;
+    top:150px; 
+    left:1060px; 
+    bottom:100px; 
+    right:50px;
+    width: 475px;
+    height:500px;
+    background-image: linear-gradient(green,black);
+}
+.BigBoxes{
+    border: solid rgb(54, 53, 53) 2px;
+    margin: 1px;
+    padding:15px;   
+    text-align:center;
+    border-radius: 7px;
+    transition: transform .4s;
+}
+#FerrariF1img:hover{
+    transform: scale(1.1);
+    z-index:1;
+}
+
+#FerrariF1img{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    object-fit: cover;
+    object-position: 50% 100%;
+    width:450px;
+    height:250px;
+    transition: transform .4s;
+}
+#NaturePhoto{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    width:450px;
+    height:250px;
+    transition: transform .4s;
+}
+#NaturePhoto:hover{
+    transform: scale(1.1);
+    z-index:1;
+}
+#SegaLogo{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    width:450px;
+    height:250px;
+    transition: transform .4s;
+}
+
+#SegaLogo:hover{
+    transform: scale(1.1);
+    z-index:1;
+}
