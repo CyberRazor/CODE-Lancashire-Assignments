@@ -3,4 +3,35 @@ body{
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
+    font-family:monospace;
+    font-size:50px;
+}
+.GridCont{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    position:absolute;
+    top:35px;
+    text-align: center;
+}
+.GridBox{
+    width:350px;
+    height:500px;
+    background-color: darkgreen;
+    position:relative;
+    
+    margin:100px;
+}
+Header{
+    text-align: center;
+
+}
+
+img{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    object-fit: cover;
+    object-position: 100% 50%;
+    width:350px;
+    height:500px;
+    transition: transform .4s;
 }

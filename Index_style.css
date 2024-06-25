@@ -4,6 +4,11 @@ body{
     min-height: 100vh;
     margin: 0;
     color: white;
+    font-family:monospace;
+}
+header{
+    text-align: center;
+    font-weight: bold;
 }
 #linkBoxDiv{
     background-image: linear-gradient(darkgray,black);
@@ -48,6 +53,15 @@ body{
     border-radius: 7px;
     transition: transform .4s;
 }
+
+.LittleBoxes{
+    border:solid grey 1px;
+    background-color: rgb(169, 169, 169,0.15);
+    border-radius:7px;
+    height: 200px;
+    font-size: 25px;
+}
+
 #FerrariF1img:hover{
     transform: scale(1.1);
     z-index:1;
