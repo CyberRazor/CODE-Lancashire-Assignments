@@ -25,3 +25,38 @@ Header{
     text-align: center;
 
 }
+
+#HomeIcon{
+    height: 50px;
+    width:auto;
+    position:absolute;
+    top: 10px;
+    left:10px
+}
+
+img{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    object-fit: cover;
+    
+    width:350px;
+    height:500px;
+    transition: transform .4s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    z-index:1;
+}
+
+#LeClercImg{
+    object-position: 50% 50%;
+}
+
+#SpaImg{
+    object-position: 50% 30%;
+}
+
+#TeamImg{
+    object-position: 50% 50%;
+}

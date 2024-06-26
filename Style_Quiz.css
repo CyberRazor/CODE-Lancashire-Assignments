@@ -1,0 +1,16 @@
+.Flexbox{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.box{
+    background-color:rgb(0,255,255,0.3);
+    width:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 8px black;
+
+}

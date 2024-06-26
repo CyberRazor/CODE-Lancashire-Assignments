@@ -26,6 +26,14 @@ Header{
 
 }
 
+#HomeIcon{
+    height: 50px;
+    width:auto;
+    position:absolute;
+    top: 25px;
+    left:25px
+}
+
 img{
     border-radius: 7px;
     box-shadow: 0 0 8px 8px black;
@@ -34,4 +42,8 @@ img{
     width:350px;
     height:500px;
     transition: transform .4s;
+}
+img:hover{
+    transform: scale(1.1);
+    z-index:1;
 }
