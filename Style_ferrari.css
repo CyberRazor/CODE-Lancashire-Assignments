@@ -1,11 +1,21 @@
 body{
     background-image: linear-gradient(red,black);
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-size: cover;
+    min-height: 125vh;
     margin: 0;
     font-family:monospace;
     font-size:50px;
     color:white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height:12px;
+    font-size:20px;
 }
 .GridCont{
     display:grid;
@@ -30,8 +40,8 @@ body{
     height: 100px;
     background-color: rgb(236, 95, 95);
     position:relative;
-    left:100px;
-    bottom: 120px;
+    left:93px;
+    bottom: 180px;
     font-size:20px;
     padding:3px;
     vertical-align: center;
@@ -59,7 +69,8 @@ Header{
     width:auto;
     position:absolute;
     top: 10px;
-    left:10px
+    left:10px;
+    background-color: rgb(255, 75, 75)
 }
 
 img{
@@ -68,7 +79,7 @@ img{
     object-fit: cover;
     
     width:350px;
-    height:500px;
+    height:400px;
     transition: transform .4s;
 }
 

@@ -1,11 +1,21 @@
 body{
     background-image: linear-gradient(blue,black);
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-size: cover;
+    min-height: 125vh;
+    overflow-x: hidden;
     margin: 0;
     font-family:monospace;
     font-size:50px;
     color:white;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height:12px;
+    font-size:20px;
 }
 .GridCont{
     display:grid;
@@ -31,7 +41,7 @@ body{
     background-color: rgb(7, 7, 177);
     position:relative;
     left:100px;
-    bottom: 120px;
+    bottom: 180px;
     font-size:20px;
     padding:2px;
     vertical-align: top;
@@ -57,16 +67,17 @@ Header{
     width:auto;
     position:absolute;
     top: 25px;
-    left:25px
+    left:25px;
+    background-color:rgb(7, 7, 177);
 }
 
 img{
     border-radius: 7px;
     box-shadow: 0 0 8px 8px black;
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 100% 35%;
     width:350px;
-    height:500px;
+    height:400px;
     transition: transform .4s;
 }
 img:hover{

@@ -1,3 +1,11 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height:12px;
+    font-size:20px;
+}
 .Flexbox{
     display:flex;
     flex-direction: row;
@@ -30,5 +38,6 @@ img{
 
 img:hover{
     transform: scale(1.1);
-    z-index:1;
+    transform: translate(-75px);
+    z-index:0;
 }
