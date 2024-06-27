@@ -5,6 +5,7 @@ body{
     margin: 0;
     font-family:monospace;
     font-size:50px;
+    color:white;
 }
 .GridCont{
     display:grid;
@@ -21,6 +22,22 @@ body{
     
     margin:100px;
 }
+
+.GridTextBox{
+    border:solid gray 3px;
+    border-radius:  0 0 70px 70px;
+    width:350px;
+    height: 100px;
+    background-color: rgb(236, 95, 95);
+    position:relative;
+    left:100px;
+    bottom: 120px;
+    font-size:20px;
+    padding:3px;
+    vertical-align: center;
+    border-radius: 15px;   
+}
+
 Header{
     text-align: center;
 
@@ -58,6 +75,7 @@ img{
 img:hover{
     transform: scale(1.1);
     z-index:1;
+
 }
 
 #LeClercImg{

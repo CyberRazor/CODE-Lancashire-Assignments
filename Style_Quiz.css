@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content:space-around;
     position:relative;
-    top: 75px;
+    top: 25px;
+
 }
 #heading3{
     position:relative;
@@ -21,6 +22,7 @@
     padding-bottom: 10px;
     border-radius: 7px;
     box-shadow: 0 0 20px 8px black;
+    margin:25px;
 
 }
 
@@ -45,24 +47,28 @@
     border-radius: 7px;
     box-shadow: 0 0 20px 8px black;
     position:relative;
-    top: 50px;
+    top: 35px;
     text-align: center;
     
 }
 #SubmissionBox{
     height:100px;
-    width:auto;
+    width:200px;
     position:absolute;
     top:750px;
-    left: 650px;
+    left: 750px;
+}
+button{
+    width:100px;
+    height:45px;
 }
 
 fieldset{
-    font-size:20px;
+    font-size:17px;
     text-align:left;
 }
 p{
-    font-size: 17px;
+    font-size: 15px;
 }
 #F1Q{
     background-color:red;
@@ -73,3 +79,7 @@ p{
 #treeQ{
     background-color:green;
 }
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }

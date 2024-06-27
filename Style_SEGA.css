@@ -22,6 +22,21 @@ body{
     
     margin:100px;
 }
+
+.GridTextBox{
+    border:solid gray 3px;
+    border-radius:  0 0 70px 70px;
+    width:350px;
+    height: 100px;
+    background-color: rgb(7, 7, 177);
+    position:relative;
+    left:100px;
+    bottom: 120px;
+    font-size:20px;
+    padding:2px;
+    vertical-align: top;
+    border-radius: 15px;   
+}
 Header{
     text-align: center;
 
