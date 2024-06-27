@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr T's Question Time</title>
-    <link rel="stylesheet" href="Index_style.css">
+    <link rel="stylesheet" href="Style_Index.css">
     <link rel="stylesheet" href="Style_Quiz.css">
 </head>
 <body>
-    <header>
+    <header class="TextBlurb">
         <p><a href="Index.html"><img src="/images/Small_Home.png" alt="Home Icon" id="HomeIcon" title="Return to front page"></a></p>
 
         <h1>Welcome to the quick fire quiz!</h1>
     </header>
 
     <form>
-        <h2>Enter your contact details</h2>
+        <div id="contacts">
+        <h2 id="heading2">Enter your contact details</h2>
         <label for="Firstname">First name:</label> 
         <input type="text" id="Firstname" name="Firstname" required="text"><br>
 
@@ -26,26 +27,27 @@
         <input type="email" id="email" name="email" required="email"><br>
 
         <label for="phone">Phone number:</label>
-        <input type="number" id="phone" name="phone" required="number"><br>
+        <input type="tel" id="phone" name="phone" required="number"><br>
+        </div>
 
 
-    <h2>Mr T's Questions</h2>
+    <h2 style="text-align: center; font-size:35px;" id="heading3">Mr T's Question time</h2>
     <div class="Flexbox"> 
-        <div class="box"> 
+        <div class="box"id="F1Q"> 
             <p>Question 1: What is the name of my favourite Formula One Driver?</p><br>
             <fieldset>
             <input type="radio" id="Q1a" name="Q1" value="A">
-            <label for="Q1a">Charles LeClerc?</label><br>
+            <label for="Q1a">Charles LeClerc</label><br>
             
             <input type="radio" id="Q1b" name="Q1" value="B">
-            <label for="Q1b">Dirk LeDuck?</label><br>
+            <label for="Q1b">Dirk LeDuck</label><br>
             
             <input type="radio" id="Q1c" name="Q1" value="C">
-            <label for="Q1c">Jack LeClark?</label><br>
+            <label for="Q1c">Mark LeClark</label><br>
         </fieldset>
         </div>
           
-        <div class="box"> 
+        <div class="box" id="SEGAQ"> 
             <p>Question 2: What is the name of the Sega driving game?</p><br>
             <fieldset>
             <input type="radio" id="Q2a" name="Q2" value="A">
@@ -59,7 +61,7 @@
         </fieldset>
             </div>
 
-        <div class="box"> 
+        <div class="box" id="treeQ"> 
             <p>Question 3: Where was the middle nature photo taken?</p><br>
            <fieldset>
             <input type="radio" id="Q3a" name="Q3" value="A">
@@ -73,7 +75,9 @@
         </fieldset>
         </div>
     </div>
+    <div id="SubmissionBox">
         <input type="submit" value="submit">
+    </div>
         
 
       </form> 

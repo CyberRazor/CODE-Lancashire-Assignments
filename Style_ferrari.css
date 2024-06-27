@@ -10,7 +10,7 @@ body{
     display:grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
     position:absolute;
-    top:35px;
+    top:75px;
     text-align: center;
 }
 .GridBox{
@@ -24,6 +24,17 @@ body{
 Header{
     text-align: center;
 
+}
+
+.TextBlurb{
+    border:solid gray 3px;
+    border-radius:  0 0 70px 70px;
+    background-color: rgb(255, 75, 75);
+    width:75%;
+    padding: 3px;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #HomeIcon{
