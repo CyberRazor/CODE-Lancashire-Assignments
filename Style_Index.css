@@ -2,25 +2,37 @@ body{
     background-image: linear-gradient(teal, darkgray);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 125vh;
+    min-height: 100vh;
+    min-width: 100vw;
     overflow-x: hidden;
-    margin: 0;
+
     color: white;
     font-family:monospace;
 }
 header{
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-height: 100px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+#footer-p{
+    position: absolute;
+    bottom:0;
     text-align: center;
-    height:12px;
-    font-size:20px;
+    width:100%
 }
 
 .txtlnk:link, .txtlnk:visited {
@@ -37,16 +49,18 @@ footer{
 }
 
 #linkBoxDiv{
-    background-image: linear-gradient(darkgray,black);
+    display:flex;  
+    align-items: center; 
+   column-gap: 1px;
+   width:100%;
+   
 }
-.InfoBox{
-    font-size:50px;
-}
+
 .TextBlurb{
     border:solid gray 3px;
     border-radius:  0 0 70px 70px;
     background-color: rgb(54, 163, 163);
-    width:75%;
+    width:65%;
     padding: 3px;
     align-items: center;
     margin-left:auto;
@@ -56,12 +70,12 @@ footer{
 #HomeIcon{
     border-radius: 7px;
     box-shadow: 0 0 8px 8px black;
-    height: 50px;
+    height: 5%;
     width:auto;
     background-color:rgb(4, 243, 243);
     position:absolute;
-    top: 10px;
-    left:10px;
+    top: 1%;
+    left:1%;
     transition: transform .4s;
     
 }
@@ -70,44 +84,17 @@ footer{
 
 }
 
-#FerrariBox{
-    position:absolute;
-    top:200px; 
-    left:10px; 
-    bottom:100px; 
-    right:50px;
-    width: 475px;
-    height:525px;
-    background-image: linear-gradient(red,black);
-}
-
-#SEGABox{
-    position:absolute;
-    top:200px; 
-    left:535px; 
-    bottom:100px; 
-    right:10px;
-    width: 475px;
-    height:525px;
-    background-image: linear-gradient(blue,black);
-}
-
-#NatureBox{
-    position:absolute;
-    top:200px; 
-    left:1060px; 
-    bottom:100px; 
-    right:50px;
-    width: 475px;
-    height:525px;
-    background-image: linear-gradient(green,black);
+#HomeIcon:click{
+    transform: scale(0.55);
 }
 .BigBoxes{
     border: solid rgb(54, 53, 53) 2px;
-    margin: 1px;
-    padding:15px;   
+    padding:2%;   
+    width: 30%;
+    height:85%;
+    margin:0.5%;
     text-align:center;
-    border-radius: 7px;
+    border-radius: 2%;
     transition: transform .4s;
 }
 
@@ -115,45 +102,40 @@ footer{
     border:solid rgb(128,128,128,0.25) 1px;
     background-color: rgb(169, 169, 169,0.15);
     border-radius:7px;
-    height: 200px;
-    font-size: 25px;
+    height: 15%;
+    max-height:15%;
+    width: 75%;
+    padding:1%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:4vh;
+
 }
 
+#FerrariBox{   
+    background-image: linear-gradient(red,black);
+}
 
-#FerrariF1img:hover{
+#SEGABox{
+    background-image: linear-gradient(blue,black);
+}
+
+#NatureBox{
+    background-image: linear-gradient(green,black);
+}
+
+/* Images*/
+.ImageLinks{
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    width:550px;
+    height:329px;
+    transition: transform .4s;
+}
+
+.ImageLinks:hover{
     transform: scale(1.1);
     z-index:1;
 }
 
-#FerrariF1img{
-    border-radius: 7px;
-    box-shadow: 0 0 8px 8px black;
-    object-fit: cover;
-    object-position: 50% 100%;
-    width:450px;
-    height:250px;
-    transition: transform .4s;
-}
-#NaturePhoto{
-    border-radius: 7px;
-    box-shadow: 0 0 8px 8px black;
-    width:450px;
-    height:250px;
-    transition: transform .4s;
-}
-#NaturePhoto:hover{
-    transform: scale(1.1);
-    z-index:1;
-}
-#SegaLogo{
-    border-radius: 7px;
-    box-shadow: 0 0 8px 8px black;
-    width:450px;
-    height:250px;
-    transition: transform .4s;
-}
 
-#SegaLogo:hover{
-    transform: scale(1.1);
-    z-index:1;
-}
