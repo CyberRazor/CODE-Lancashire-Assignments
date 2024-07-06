@@ -9,86 +9,88 @@
 </head>
 <body>
     <header class="TextBlurb">
-        <p><a href="Index.html"><img src="/images/Small_Home.png" alt="Home Icon" id="HomeIcon" title="Return to front page"></a></p>
-
-        <h1>Welcome to the quick fire quiz!</h1>
+        <p><a href="Index.html"><img src="/images/Small_Home.png" alt="Home Icon" id="HomeIcon" class="Icon" title="Return to front page"></a></p>
+        <p><a href="Page_Quiz.html"><img src="/images/Quiz.png" alt="Quiz Icon" id="QuizIcon" class="Icon" title="Go to the quiz"></a></p>
+        <h1>Mr T's Question time</h1>
     </header>
-
+<div id="formBox">
     <form id="contact-form">
-        <div id="contacts">
-        <h2 id="heading2">Enter your contact details</h2>
-        <label for="Firstname">First name:</label> 
-        <input type="text" id="Firstname" name="Firstname" required="text"><br>
-
-        <label for="Lastname">Last name:</label>
-        <input type="text" id="Lastname" name="Lastname" required="text"><br>
-
-        <label for="email">Email address:</label>
-        <input type="email" id="email" name="email" required="email"><br>
-
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" required="number"><br>
-        </div>
-
-
-    <h2 style="text-align: center; font-size:35px;" id="heading3">Mr T's Question time</h2>
+        <h2 id="heading3">Welcome to the quick fire quiz!</h2>
+    
     <div class="Flexbox"> 
         <div class="box"id="F1Q"> 
-            <p>Question 1: What is the name of my favourite Formula One Driver?</p><br>
+            <legend>What is the name of my favourite Formula One Driver?</legend>
             <fieldset>
-            <input type="radio" id="Q1a" name="Q1" value="A" required>
-            <label for="Q1a">Charles LeClerc</label><br>
-            
-            <input type="radio" id="Q1b" name="Q1" value="B">
-            <label for="Q1b">Dirk LeDuck</label><br>
-            
-            <input type="radio" id="Q1c" name="Q1" value="C">
-            <label for="Q1c">Mark LeClark</label><br>
-        </fieldset>
+                <input type="radio" id="Q1a" name="Q1" value="A" required>
+                <label for="Q1a">Charles LeClerc</label><br>
+                
+                <input type="radio" id="Q1b" name="Q1" value="B">
+                <label for="Q1b">Dirk LeDuck</label><br>
+                
+                <input type="radio" id="Q1c" name="Q1" value="C">
+                <label for="Q1c">Mark LeClark</label><br>
+            </fieldset>
         </div>
           
         <div class="box" id="SEGAQ"> 
-            <p>Question 2: What is the name of the Sega driving game?</p><br>
+            <legend>What is the name of the Sega driving game?</legend>
             <fieldset>
-            <input type="radio" id="Q2a" name="Q2" value="A" required>
-            <label for="Q2a">Ridge Racer Revolution</label><br>
-            
-            <input type="radio" id="Q2b" name="Q2" value="B">
-            <label for="Q2b">Outrun</label><br>
-            
-            <input type="radio" id="Q2c" name="Q2" value="C">
-            <label for="Q2c">Power Drift</label><br>
-        </fieldset>
-            </div>
+                <input type="radio" id="Q2a" name="Q2" value="A" required>
+                <label for="Q2a">Ridge Racer</label><br>
+                
+                <input type="radio" id="Q2b" name="Q2" value="B">
+                <label for="Q2b">Outrun</label><br>
+                
+                <input type="radio" id="Q2c" name="Q2" value="C">
+                <label for="Q2c">Power Drift</label><br>
+            </fieldset>
+        </div>
 
         <div class="box" id="treeQ"> 
-            <p>Question 3: Where was the middle nature photo taken?</p><br>
-           <fieldset>
-            <input type="radio" id="Q3a" name="Q3" value="A" required>
-            <label for="Q3a">Luton</label><br>
-            
-            <input type="radio" id="Q3b" name="Q3" value="B">
-            <label for="Q3b">Manchester</label><br>
-            
-            <input type="radio" id="Q3c" name="Q3" value="C">
-            <label for="Q3c">Warton</label><br>
-        </fieldset>
+            <legend>Where was the middle nature photo taken?</legend>
+            <fieldset>
+                <input type="radio" id="Q3a" name="Q3" value="A" required>
+                <label for="Q3a">Luton</label><br>
+
+                <input type="radio" id="Q3b" name="Q3" value="B">
+                <label for="Q3b">Manchester</label><br>
+
+                <input type="radio" id="Q3c" name="Q3" value="C">
+                <label for="Q3c">Warton</label><br>
+            </fieldset>
         </div>
     </div>
-    <div id="SubmissionBox">
-        <button type="submit" value="Submit">Submit your answers</button>
-    </div> 
 
-    <div id="quiz-results">
-        <h3></h3>
+    <div id="contacts">
+        <h2 id="heading2">Enter your contact details and answer the questions to win!</h2>
+        <input type="text" id="Firstname" name="Firstname" placeholder="First name" required="text"><br>
 
 
+        <input type="text" id="Lastname" name="Lastname" placeholder="Last name" required="text"><br>
+
+
+        <input type="email" id="email" name="email" placeholder="Email"required="email"><br>
+
+        <input type="tel" id="phone" name="phone" placeholder="Phone number"required="number"><br>
+
+        <div id="SubmissionBox">
+            <button type="submit" value="Submit">Submit your answers</button>
+        </div> 
     </div>
 
       </form> 
-      <footer>
-        <p id="footer">Website by Michael Taylor <br>2024</p>
+</div>
+
+<div id="quiz-submitted" >
+    <h3 id="quiz-results">Results go here!</h3>
+    </div>
+</div>
+ 
+<script src="quiz.js"></script>
+
+    <footer>
+        <p>Website by Michael Taylor <br>2024</p>
     </footer>
-    <script src="quiz.js"></script>
+
 </body>
 </html>

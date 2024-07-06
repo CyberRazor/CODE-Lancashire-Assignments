@@ -32,6 +32,8 @@ let Q1A = false
 let Q2A = false
 let Q3A = false
 
+const element=document.getElementById("contacts")
+
     const Question1 = data.Q1
     if(Question1 === "A")
     {
@@ -70,14 +72,32 @@ let Q3A = false
     if(Q1A && Q2A && Q3A)
     {
         console.log(name + " you are a WINNER WINNER CHICKEN DINNER")
-        document.getElementById("quiz-results").innerHTML = <h3>"You answered wisely..."</h3>;
+
+        element.remove();
+        document.getElementById("quiz-results").style.visibility = "visible";
+        document.getElementById("quiz-results").innerHTML = name + ", You answered wisely... CONGRATULATIONS!!!";
+
+        
+
     }
     else
     {
-        console.log(name + " is a loo-hoo ser-herrrrrr")
+        console.log(name + " is a loo-hoo ser-herrrrrr");
+        element.remove();
+        document.getElementById("quiz-results").style.visibility = "visible";
+        document.getElementById("quiz-results").innerHTML = name + ", You answered poorly...";
+
+        //if(Q1result = "Correct!"){document.getElementById("F1Q").style.backgroundColor = "lightred";}
+        //else if(Q1result = "False"){document.getElementById("F1Q").style.backgroundColor = "darkred";}
+        //
+        //if(Q2result = "Correct!"){document.getElementById("SEGAQ").style.backgroundColor = "lightblue";}
+        //else if(Q2result = "False"){document.getElementById("SEGAQ").style.backgroundColor = "darkblue";}
+        //
+        //if(Q3result = "Correct!"){document.getElementById("treeQ").style.backgroundColor = "lightgreen";}
+        //else if(Q3result = "False"){document.getElementById("treeQ").style.backgroundColor = "darkgreen";}
     }
-    document.getElementById("quiz-results").setAttribute("display", "block");
-    document.getElementById("quiz-results").innerHTML = <h3>"You answered wisely..."</h3>;
+ 
+    
 }
 
 

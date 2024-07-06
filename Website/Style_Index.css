@@ -1,47 +1,50 @@
-body{
+html, body{
     background-image: linear-gradient(teal, darkgray);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
-
+    margin:0;
+    padding:0;
     color: white;
     font-family:monospace;
 }
 header{
+    background-color: rgb(0, 85, 85,0.25);
+    width:100%;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
+    text-decoration: underline;
+    
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    display: block;
+    position: fixed;
+    bottom: 0%;
+    margin-bottom:0;
     width: 100%;
-    min-height: 100px;
-
+    min-height: 1%;
     display: grid;
     justify-content: center;
-    align-items: center;
-    
-    flex-direction: column;
+    align-items: center;    
+    flex-direction: row;
+    background-color: rgb(0, 85, 85,0.25);
 }
 
-#footer-p{
-    position: absolute;
-    bottom:0;
-    text-align: center;
-    width:100%
-}
+
 
 .txtlnk:link, .txtlnk:visited {
-  background-color: rgb(60, 182, 182);
+  background-color: rgb(255, 145, 0);
   color: white;
-  padding: 2px 4px;
+  padding: 1px 2px;
   text-align: center;
-  text-decoration: underline;
+
   display: inline-block;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 .txtlnk:hover, .txtlnk:active {
@@ -49,10 +52,13 @@ footer{
 }
 
 #linkBoxDiv{
-    display:flex;  
-    align-items: center; 
-   column-gap: 1px;
-   width:100%;
+    display:flex; 
+    flex-direction: row; 
+    column-gap: 1px;
+    width:100%;
+    margin-left:3%;
+    margin-right:3%;
+    padding:2%;
    
 }
 
@@ -60,7 +66,7 @@ footer{
     border:solid gray 3px;
     border-radius:  0 0 70px 70px;
     background-color: rgb(54, 163, 163);
-    width:65%;
+    width:60%;
     padding: 3px;
     align-items: center;
     margin-left:auto;
@@ -68,34 +74,43 @@ footer{
 }
 
 #HomeIcon{
-    border-radius: 7px;
-    box-shadow: 0 0 8px 8px black;
-    height: 5%;
-    width:auto;
-    background-color:rgb(4, 243, 243);
     position:absolute;
     top: 1%;
-    left:1%;
-    transition: transform .4s;
-    
+    left:1%;     
 }
-#HomeIcon:hover{
+#QuizIcon{
+    position:absolute;
+    top: 1%;
+    left:95%; 
+}
+.Icon{    
+    border-radius: 7px;
+    box-shadow: 0 0 8px 8px black;
+    height: 6%;
+    width:auto;
+    background-color:rgb(4, 243, 243);
+    transition: transform .4s;
+}
+.Icon:hover{
     transform: scale(1.1);
 
 }
 
-#HomeIcon:click{
+.Icon:click{
     transform: scale(0.55);
 }
+
+
 .BigBoxes{
     border: solid rgb(54, 53, 53) 2px;
     padding:2%;   
-    width: 30%;
-    height:85%;
-    margin:0.5%;
+    width: 20%;
+    height:45%;
+    margin:2%;
     text-align:center;
     border-radius: 2%;
     transition: transform .4s;
+    align-self: auto;
 }
 
 .LittleBoxes{
@@ -106,9 +121,11 @@ footer{
     max-height:15%;
     width: 75%;
     padding:1%;
+    align-self: auto;
     margin-left:auto;
     margin-right:auto;
-    font-size:4vh;
+    font-size:3em;
+ 
 
 }
 
@@ -128,8 +145,9 @@ footer{
 .ImageLinks{
     border-radius: 7px;
     box-shadow: 0 0 8px 8px black;
-    width:550px;
-    height:329px;
+    width:100%;
+    height:250px;
+    object-fit: cover;
     transition: transform .4s;
 }
 

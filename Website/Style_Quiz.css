@@ -1,57 +1,83 @@
 .Flexbox{
+    height:10%;
+    width:100%;
+    padding:3%;
+    margin:0;
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
-    position:relative;
-    top: 25px;
+    align-items: center;
+    justify-content:center;
+    gap: 3%;
+    background-color: rgb(0, 85, 85,0.25);
+    border-radius: 17px ;
+    border:solid gray 2px;
 
 }
-#heading3{
-    position:relative;
-    top:60px;
-    left:center;
 
+#contact-form{
+margin:auto;
+}
+
+#heading3{
+    width:75%;
+   padding: 1%;
+   margin:auto;
+
+
+   text-align: center; 
+   font-size:1.5em; 
+   border:solid gray 2px;
+   border-radius: 17px 17px 0 0 ;
+   background-color: rgb(0, 0, 0,0.25);
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    display: block;
+    position: relative;
+    bottom: 1%;
     width: 100%;
-    text-align: center;
-    height:12%;
-    font-size:20px;
+    min-height: 1%;
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: row;
+    background-color: rgb(0, 85, 85,0.25);
 }
-h3{
-    display: none;  
+#quiz-results{
+    display: block;  
     width: 65%;
-    height:200px;
+    height:auto;
     background-color: yellow;
+    box-shadow: 0 0 20px 8px black;
+    border-radius: 7px;
     color:black;
     width:75%;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom:10%;
+    text-align: center;
 }
 
 
 .box{
     background-color:rgb(0,255,255,0.3);
-    width:450px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    border-radius: 7px;
+    width:290px;
+    height:255px;
+    padding-top:1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 7%;
     box-shadow: 0 0 20px 8px black;
-    margin:30px;
-
 }
 
 .TextBlurb{
     border:solid gray 3px;
     border-radius:  0 0 70px 70px;
     background-color: rgb(54, 163, 163);
-    width:75%;
-    padding: 3px;
+    width:60%;
+    margin-bottom: 1%;
     align-items: center;
     margin-left:auto;
     margin-right:auto;
@@ -60,35 +86,80 @@ h3{
 #contacts{
     background-color: rgb(172, 168, 168,0.5);
     margin:0 auto;
-    width:350px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    width:75%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
     border-radius: 7px;
     box-shadow: 0 0 20px 8px black;
     position:relative;
-    top: 35px;
+    top: 35%;
     text-align: center;
     
 }
 #SubmissionBox{
-    height:100px;
-    width:200px;
-    position:absolute;
-    top:750px;
-    left: 750px;
+margin:auto;
 }
 button{
-    width:100px;
-    height:45px;
+    margin:5%;
+    margin-top:8%;
+    width:85%;
+    height:100px;
+    border:solid 2px;
+    background-color:rgb(54, 163, 163);
+    font-size: 1em;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 8px black;
+    transition: transform .4s ease-in-out;
 }
 
-fieldset{
-    font-size:17px;
-    text-align:left;
+#SubmissionBox:hover{transform: scale(1.12);}
+
+#SubmissionBox:click{    transform: scale(0.55);}
+#RetryButton:hover{transform: scale(1.12);}
+
+#RetryButton:click{    transform: scale(0.55);}
+   
+legend{
+    font-size:1em;
+    padding:1%;
+    margin:0;
 }
+fieldset{
+    font-size:1em;
+    text-align:left;
+    margin:7%;
+    width:auto;
+    height:auto;
+   
+}
+input[type="radio"]{
+    margin:12%;
+    border:solid black 1px;
+}
+#Firstname, #Lastname, #email, #phone{
+    height:20px;
+    width:300px;
+
+}
+
+#quiz-results{
+    visibility: hidden;
+    font-size: 3em;
+    text-align: center;
+    vertical-align:middle;
+    height:15%;
+    padding:2%;
+}
+
+#quiz-submitted{
+    height:50%;
+    width:auto;
+    align-items: center;
+}
+
 p{
-    font-size: 15px;
+    font-size: 2.5em;
 }
 #F1Q{
     background-color:red;
@@ -100,6 +171,6 @@ p{
     background-color:green;
 }
 form  { display: table;      }
-p     { display: table-row;  }
-label { display: table-cell; }
+p     { display: table-row; }
+label { display: table-cell; display:inline;}
 input { display: table-cell; }

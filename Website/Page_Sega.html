@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Style_SEGA.css"
+    <link rel="stylesheet" href="Style_Index.css">
+    <link rel="stylesheet" href="Style_SEGA.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr T's ThunderDome - SEGA</title>
 </head>
 <body>
-    <header class="TextBlurb">SEGA Video Games
-        <p><a href="Index.html"><img src="/images/Small_Home.png" alt="Home Icon" id="HomeIcon" title="Return to front page"></a></p>
+    <header class="TextBlurb"><h1>SEGA Video Games</h1>
+        <p><a href="Index.html"><img src="/images/Small_Home.png" alt="Home Icon" id="HomeIcon" class="Icon" title="Return to front page"></a></p>
+        <p><a href="Page_Quiz.html"><img src="/images/Quiz.png" alt="Quiz Icon" id="QuizIcon" class="Icon" title="Go to the quiz"></a></p>
     </header>
-    <div class="GridCont">
-        <div class="GridBox"><a href= "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)" target="_blank"><img src="/images/Sonic1.jpg" alt="Sonic The Hedgehog"></a></div>
-        <div class="GridBox"><a href="https://www.arcadeclub.co.uk/games/out-run/" target="_blank"><img src="images/Outrun_Art.jpg" alt="Outrun"></a> </div>
-        <div class="GridBox"><a href="https://en.wikipedia.org/wiki/Nights_into_Dreams" target="_blank"><img src="images/NightsIntoDreamsBox.jpg"></a> </div>
-
-        <div class="GridTextBox"> <h2>Sonic The Hedgehog</h2></div>
-        <div class="GridTextBox"> <h2>Outrun</h2></div>
-        <div class="GridTextBox"> <h2>Nights Into Dreams</h2></div>
+    <div style="text-align: center;">
+        <h2>I have always loved SEGA video games. From their fast-paced arcade thrills, to their more experimental console titles. </h2>
+        <h3>Hover over or click on the games below to find out more</h3>
     </div>
+    <div id="linkBoxDiv">
+        <div class="BigBoxes">
+            <a href= "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)" target="_blank"><img src="/images/Sonic1.jpg" alt="Sonic The Hedgehog"class="ImageLinks" id="SonicIMG"></a>
+            <div class="LittleBoxes"> <h2 id="SonicTXT">Sonic The Hedgehog</h2></div>
+        </div>
+        <div class="BigBoxes">
+            <a href="https://www.arcadeclub.co.uk/games/out-run/" target="_blank"><img src="images/Outrun_Art.jpg" alt="Outrun" class="ImageLinks" id="OutrunIMG"></a> 
+            <div class="LittleBoxes"> <h2 id="OutrunTXT">Outrun</h2></div>
+        </div>
+        <div class="BigBoxes">
+            <a href="https://en.wikipedia.org/wiki/Nights_into_Dreams" target="_blank"><img src="images/NightsIntoDreamsBox.jpg" class="ImageLinks" id="NightsIMG"></a> 
+            <div class="LittleBoxes"> <h2 id="NightsTXT">Nights Into Dreams</h2></div>
+        </div> 
+    </div>
+    <script src="sega.js"></script>
     <footer>
         <p id="footer">Website by Michael Taylor <br>2024</p>
     </footer>
