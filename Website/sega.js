@@ -1,34 +1,39 @@
-var imgS = document.getElementById('SonicIMG')
-var txtS = document.getElementById('SonicTXT')
+const imgS = document.getElementById('SonicIMG')
+const txtS = document.getElementById('SonicTXT')
+
+imgS.addEventListener("mouseover", function() {
+    txtS.innerHTML = "High Speed Action <br><br>Released on the Sega Mega Drive, 1991"
+})
 
 imgS.addEventListener("mouseout", function() {
     txtS.innerHTML = "Sonic The Hedgehog"
 })
 
-imgS.addEventListener("mouseover", function() {
-    txtS.innerHTML = "Action Platformer. Released on the Sega Mega Drive, 1991"
+
+
+
+const imgN = document.getElementById('NightsIMG')
+const txtN = document.getElementById('NightsTXT')
+
+imgN.addEventListener("mouseover", function() {
+    txtN.innerHTML = "Action Adventure <br><br>Released on the Sega Saturn, 1996"
 })
-
-
-var imgN = document.getElementById('NightsIMG')
-var txtN = document.getElementById('NightsTXT')
 
 imgN.addEventListener("mouseout", function() {
     txtN.innerHTML = "Nights Into Dreams"
 })
 
-imgN.addEventListener("mouseover", function() {
-    txtN.innerHTML = "Action Adventure. Released on the Sega Saturn, 1996"
+
+
+
+const imgO = document.getElementById('OutrunIMG')
+const txtO = document.getElementById('OutrunTXT')
+
+imgO.addEventListener("mouseover", function() {
+    txtO.innerHTML = "Driving simulator <br><br>Released in arcades, 1986"
 })
-
-
-var imgO = document.getElementById('OutrunIMG')
-var txtO = document.getElementById('OutrunTXT')
 
 imgO.addEventListener("mouseout", function() {
     txtO.innerHTML = "Outrun"
 })
 
-imgO.addEventListener("mouseover", function() {
-    txtO.innerHTML = "Driving simulator. Released in arcades, 1986"
-})
