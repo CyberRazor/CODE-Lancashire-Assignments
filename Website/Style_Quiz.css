@@ -16,14 +16,13 @@
 
 #contact-form{
 margin:auto;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #heading3{
     width:75%;
    padding: 1%;
    margin:auto;
-
-
    text-align: center; 
    font-size:1.5em; 
    border:solid gray 2px;
