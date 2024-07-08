@@ -39,9 +39,11 @@ const element=document.getElementById("contacts")
     {
         Q1result = "Correct!"
         Q1A = true
+        document.getElementById("F1Q").style.backgroundColor = "yellow";
     }
     else{
         Q1result = "False"
+        document.getElementById("F1Q").style.backgroundColor = "darkred";
     }
     console.log("Your first answer "+ Question1 +" " + "was ... " + Q1result )
 
@@ -51,9 +53,11 @@ const element=document.getElementById("contacts")
         {
             Q2result = "Correct!"
             Q2A = true
+            document.getElementById("SEGAQ").style.backgroundColor = "yellow";
         }
         else{
             Q2result = "False"
+            document.getElementById("SEGAQ").style.backgroundColor = "darkblue";
         }
     console.log("Your Second answer " + Question2 +" "+ "was ... " + Q2result )
 
@@ -62,9 +66,12 @@ const element=document.getElementById("contacts")
         {
             Q3result = "Correct!"
             Q3A = true
+            document.getElementById("treeQ").style.backgroundColor = "yellow";
+            
         }
         else{
             Q3result = "False"
+            document.getElementById("treeQ").style.backgroundColor = "darkgreen";
         }
     console.log("Your third answer " + Question3 +" "+ "was ... " + Q3result )
 
@@ -77,24 +84,16 @@ const element=document.getElementById("contacts")
         document.getElementById("quiz-results").style.visibility = "visible";
         document.getElementById("quiz-results").innerHTML = name + ", You answered wisely... CONGRATULATIONS!!!";
 
-        
-
     }
     else
     {
         console.log(name + " is a loo-hoo ser-herrrrrr");
         element.remove();
-        document.getElementById("quiz-results").style.visibility = "visible";
+        document.getElementById("quiz-results").style.visibility = "visible"
+        document.getElementById("quiz-results").style.backgroundColor = "rgb(54, 163, 163)";
         document.getElementById("quiz-results").innerHTML = name + ", You answered poorly...";
 
-        //if(Q1result = "Correct!"){document.getElementById("F1Q").style.backgroundColor = "lightred";}
-        //else if(Q1result = "False"){document.getElementById("F1Q").style.backgroundColor = "darkred";}
-        //
-        //if(Q2result = "Correct!"){document.getElementById("SEGAQ").style.backgroundColor = "lightblue";}
-        //else if(Q2result = "False"){document.getElementById("SEGAQ").style.backgroundColor = "darkblue";}
-        //
-        //if(Q3result = "Correct!"){document.getElementById("treeQ").style.backgroundColor = "lightgreen";}
-        //else if(Q3result = "False"){document.getElementById("treeQ").style.backgroundColor = "darkgreen";}
+
     }
  
     

@@ -54,3 +54,18 @@ html, body{
 h3{
     margin:0;
 }
+#SubjectInfo{
+    text-align: center;
+    margin-top:1%;
+    padding:0.5%;
+    background-color: teal;
+    border:solid gray 2px;
+    border-radius:  70px 70px 70px 70px;
+    width:60%;
+    height:100px;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.4em;
+    font-weight: bold;
+}
