@@ -51,7 +51,15 @@ html, body{
     box-shadow: 0 0 8px 8px black;
 
     object-fit: cover;
+    padding:0;
     transition: transform .4s;
+}
+
+#IMG1{
+    object-position: 80% 10%;   
+}
+#IMG2{
+    object-position: 30% 50%; 
 }
 h3{
     margin:0;
@@ -64,6 +72,7 @@ h2{
     text-align: center;
     margin-top:1%;
     padding:0.5%;
+    padding-bottom: 1%;
     background-color: rgb(255, 75, 75, 0.5);
     border:solid gray 2px;
     border-radius:  70px 70px 70px 70px;
@@ -74,4 +83,5 @@ h2{
     margin-right:auto;
     font-size:1.4em;
     font-weight: bold;
+    padding-bottom: 1%;
 }

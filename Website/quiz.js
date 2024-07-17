@@ -40,6 +40,7 @@ const element=document.getElementById("contacts")
         Q1result = "Correct!"
         Q1A = true
         document.getElementById("F1Q").style.backgroundColor = "yellow";
+        document.getElementById("F1Q").style.color = "black";
     }
     else{
         Q1result = "False"
@@ -54,6 +55,7 @@ const element=document.getElementById("contacts")
             Q2result = "Correct!"
             Q2A = true
             document.getElementById("SEGAQ").style.backgroundColor = "yellow";
+            document.getElementById("SEGAQ").style.color = "black";
         }
         else{
             Q2result = "False"
@@ -67,11 +69,13 @@ const element=document.getElementById("contacts")
             Q3result = "Correct!"
             Q3A = true
             document.getElementById("treeQ").style.backgroundColor = "yellow";
+            document.getElementById("treeQ").style.color = "black";
             
         }
         else{
             Q3result = "False"
             document.getElementById("treeQ").style.backgroundColor = "darkgreen";
+
         }
     console.log("Your third answer " + Question3 +" "+ "was ... " + Q3result )
 
