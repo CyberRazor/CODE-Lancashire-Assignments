@@ -1,4 +1,6 @@
-This is my web development coursework. It is designed as a portfolio page for my audio career - showings my achievements and additional skills
+This is my web development coursework. It is designed as a portfolio page for my audio career - showings my achievements and additional skills.
+
+Using JavaScript, Tailwind, HTML, CSS and React I have incorporated React Routing, several interactive elements and a data collection form.
 
 
 
