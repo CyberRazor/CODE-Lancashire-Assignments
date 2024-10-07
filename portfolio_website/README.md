@@ -1,3 +1,8 @@
+This is my web development coursework. It is designed as a portfolio page for my audio career - showings my achievements and additional skills
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
